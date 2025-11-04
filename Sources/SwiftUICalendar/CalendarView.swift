@@ -475,7 +475,7 @@ extension Date {
 // MARK: - Weekday Extensions
 
 extension CalendarView.Weekday {
-    var rawValue: Int {
+    public var rawValue: Int {
         switch self {
         case .sunday: return 1
         case .monday: return 2
