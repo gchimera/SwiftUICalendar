@@ -19,13 +19,13 @@ Add the following dependency to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yourusername/SwiftUICalendar.git", from: "1.0.0")
+    .package(url: "https://github.com/gchimera/SwiftUICalendar.git", from: "1.0.0")
 ]
 ```
 
 Or in Xcode:
 1. Go to File > Add Packages...
-2. Enter the repository URL: `https://github.com/yourusername/SwiftUICalendar.git`
+2. Enter the repository URL: `https://github.com/gchimera/SwiftUICalendar.git`
 3. Choose the version you want to use
 
 ## Usage
