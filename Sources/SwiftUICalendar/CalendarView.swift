@@ -105,7 +105,7 @@ public struct CalendarView: View {
         case .day:
             formatter.dateFormat = "EEEE, MMMM d, yyyy"
         case .week:
-            let startOfWeek = Calendar.current.date(from: Calendar.current.dateComponents([.yearForWeekOfYear, .weekOfYear], from: currentDate))!.adding(days: configuration.startOfWeek.rawValue - 1)
+            let startOfWeek = Calendar.current.date(from: Calendar.current.dateComponents([Calendar.Component.yearForWeekOfYear, .weekOfYear], from: currentDate))!.adding(days: configuration.startOfWeek.rawValue - 1)
             let endOfWeek = startOfWeek.adding(days: 6)
             formatter.dateFormat = "MMM d"
             let start = formatter.string(from: startOfWeek)
@@ -363,7 +363,7 @@ private struct MonthCell: View {
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 7), spacing: 2) {
                 ForEach(0..<42) { index in
                     let startOfMonth = Calendar.current.date(from: Calendar.current.dateComponents([.year, .month], from: date))!
-                    let startOfWeek = Calendar.current.date(from: Calendar.current.dateComponents([.yearForWeekOfYear, .weekOfYear], from: startOfMonth))!.adding(days: configuration.startOfWeek.rawValue - 1)
+                    let startOfWeek = Calendar.current.date(from: Calendar.current.dateComponents([Calendar.Component.yearForWeekOfYear, .weekOfYear], from: startOfMonth))!.adding(days: configuration.startOfWeek.rawValue - 1)
                     let dayDate = startOfWeek.adding(days: index)
                     Text(dayDate.isSameMonth(as: date) ? "\(dayDate.day)" : "")
                         .font(.system(size: 8))
@@ -438,7 +438,7 @@ extension Date {
 
     func startOfWeek(weekday: CalendarView.Weekday) -> Date {
         let calendar = Calendar.current
-        let components = calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)
+        let components = calendar.dateComponents([Calendar.Component.yearForWeekOfYear, .weekOfYear], from: self)
         return calendar.date(from: components)!.adding(days: weekday.rawValue - 1)
     }
 
