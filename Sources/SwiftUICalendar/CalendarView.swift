@@ -12,7 +12,7 @@ import SwiftUI
 /// Designed for iOS developers to integrate an elegant and flexible calendar into their apps.
 /// Features Apple-inspired liquid glass effect where possible.
 @available(iOS 17.0, macOS 14.0, *)
-public struct CalendarView: View {
+public struct CalendarView {
     /// The current view mode of the calendar
     public enum ViewMode: String, CaseIterable {
         case day, week, month, year
@@ -57,6 +57,10 @@ public struct CalendarView: View {
         self._viewMode = State(initialValue: initialViewMode)
         self.onDateSelected = onDateSelected
     }
+}
+
+@available(iOS 17.0, macOS 14.0, *)
+extension CalendarView: View {
 
     public var body: some View {
         ZStack {
@@ -105,7 +109,8 @@ public struct CalendarView: View {
         case .day:
             formatter.dateFormat = "EEEE, MMMM d, yyyy"
         case .week:
-            let startOfWeek = Calendar.current.date(from: Calendar.current.dateComponents([Calendar.Component.yearForWeekOfYear, .weekOfYear], from: currentDate))!.adding(days: configuration.startOfWeek.rawValue - 1)
+            let calendar = Foundation.Calendar(identifier: .gregorian)
+            let startOfWeek = calendar.date(from: calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: currentDate))!.adding(days: configuration.startOfWeek.rawValue - 1)
             let endOfWeek = startOfWeek.adding(days: 6)
             formatter.dateFormat = "MMM d"
             let start = formatter.string(from: startOfWeek)
@@ -155,6 +160,7 @@ public struct CalendarView: View {
                 )
             }
         }
+        .task { }
     }
 
     private func previousPeriod() {
@@ -362,8 +368,9 @@ private struct MonthCell: View {
 
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 7), spacing: 2) {
                 ForEach(0..<42) { index in
-                    let startOfMonth = Calendar.current.date(from: Calendar.current.dateComponents([.year, .month], from: date))!
-                    let startOfWeek = Calendar.current.date(from: Calendar.current.dateComponents([Calendar.Component.yearForWeekOfYear, .weekOfYear], from: startOfMonth))!.adding(days: configuration.startOfWeek.rawValue - 1)
+                    let calendar = Foundation.Calendar(identifier: .gregorian)
+                    let startOfMonth = calendar.date(from: calendar.dateComponents([.year, .month], from: date))!
+                    let startOfWeek = calendar.date(from: calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: startOfMonth))!.adding(days: configuration.startOfWeek.rawValue - 1)
                     let dayDate = startOfWeek.adding(days: index)
                     Text(dayDate.isSameMonth(as: date) ? "\(dayDate.day)" : "")
                         .font(.system(size: 8))
@@ -425,11 +432,11 @@ private struct DayCell: View {
 
 extension Date {
     var day: Int {
-        Calendar.current.component(.day, from: self)
+        Foundation.Calendar(identifier: .gregorian).component(.day, from: self)
     }
 
     var weekNumber: Int {
-        Calendar.current.component(.weekOfYear, from: self)
+        Foundation.Calendar(identifier: .gregorian).component(.weekOfYear, from: self)
     }
 
     var startOfWeek: Date {
@@ -437,37 +444,37 @@ extension Date {
     }
 
     func startOfWeek(weekday: CalendarView.Weekday) -> Date {
-        let calendar = Calendar.current
-        let components = calendar.dateComponents([Calendar.Component.yearForWeekOfYear, .weekOfYear], from: self)
+        let calendar = Foundation.Calendar(identifier: .gregorian)
+        let components = calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)
         return calendar.date(from: components)!.adding(days: weekday.rawValue - 1)
     }
 
     var startOfMonth: Date {
-        Calendar.current.date(from: Calendar.current.dateComponents([.year, .month], from: self))!
+        Foundation.Calendar(identifier: .gregorian).date(from: Foundation.Calendar(identifier: .gregorian).dateComponents([.year, .month], from: self))!
     }
 
     var startOfYear: Date {
-        Calendar.current.date(from: Calendar.current.dateComponents([.year], from: self))!
+        Foundation.Calendar(identifier: .gregorian).date(from: Foundation.Calendar(identifier: .gregorian).dateComponents([.year], from: self))!
     }
 
     func adding(days: Int) -> Date {
-        Calendar.current.date(byAdding: .day, value: days, to: self)!
+        Foundation.Calendar(identifier: .gregorian).date(byAdding: .day, value: days, to: self)!
     }
 
     func adding(months: Int) -> Date {
-        Calendar.current.date(byAdding: .month, value: months, to: self)!
+        Foundation.Calendar(identifier: .gregorian).date(byAdding: .month, value: months, to: self)!
     }
 
     func adding(years: Int) -> Date {
-        Calendar.current.date(byAdding: .year, value: years, to: self)!
+        Foundation.Calendar(identifier: .gregorian).date(byAdding: .year, value: years, to: self)!
     }
 
     func isSameDay(as other: Date) -> Bool {
-        Calendar.current.isDate(self, inSameDayAs: other)
+        Foundation.Calendar(identifier: .gregorian).isDate(self, inSameDayAs: other)
     }
 
     func isSameMonth(as other: Date) -> Bool {
-        Calendar.current.isDate(self, equalTo: other, toGranularity: .month)
+        Foundation.Calendar(identifier: .gregorian).isDate(self, equalTo: other, toGranularity: .month)
     }
 }
 
@@ -506,8 +513,6 @@ extension CalendarView.Weekday {
         let formatter = DateFormatter()
         formatter.locale = locale
         formatter.dateFormat = "EEE"
-        let date = Date()
-        let calendar = Calendar.current
         let weekdaySymbols = formatter.weekdaySymbols
         return weekdaySymbols?[rawValue - 1] ?? ""
     }

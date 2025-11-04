@@ -2,5 +2,5 @@
 // https://docs.swift.org/swift-book
 
 // Export the main CalendarView for easier access
-@available(iOS 17.0, *)
+@available(iOS 17.0, macOS 14.0, *)
 public typealias Calendar = CalendarView

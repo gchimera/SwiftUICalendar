@@ -1,0 +1,663 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.xctest/Contents/MacOS/SwiftUICalendarPackageTests",
+      "packagePath" : "/Users/gchimera/Developer/SwiftUICalendar",
+      "productName" : "SwiftUICalendarPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SwiftUICalendar-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/sources",
+      "importPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/Sources/SwiftUICalendar/CalendarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/Sources/SwiftUICalendar/SwiftUICalendar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftUICalendar",
+      "moduleOutputPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules/SwiftUICalendar.swiftmodule",
+      "objects" : [
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/CalendarView.swift.o",
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/SwiftUICalendar.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/include/SwiftUICalendar-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swiftuicalendar"
+      ],
+      "outputFileMapPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/CalendarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/SwiftUICalendar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules/SwiftUICalendar.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/gchimera/Developer/SwiftUICalendar/Sources/SwiftUICalendar/CalendarView.swift",
+        "/Users/gchimera/Developer/SwiftUICalendar/Sources/SwiftUICalendar/SwiftUICalendar.swift"
+      ],
+      "tempsPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftUICalendarPackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/sources",
+      "importPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules/SwiftUICalendarTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftUICalendarPackageTests",
+      "moduleOutputPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules/SwiftUICalendarPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/include/SwiftUICalendarPackageTests-Swift.h",
+        "-color-diagnostics",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swiftuicalendar"
+      ],
+      "outputFileMapPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules/SwiftUICalendarPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftUICalendarTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarTests.build/sources",
+      "importPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/Tests/SwiftUICalendarTests/SwiftUICalendarTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules/SwiftUICalendar.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftUICalendarTests",
+      "moduleOutputPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules/SwiftUICalendarTests.swiftmodule",
+      "objects" : [
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarTests.build/SwiftUICalendarTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swiftuicalendar"
+      ],
+      "outputFileMapPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarTests.build/SwiftUICalendarTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules/SwiftUICalendarTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/gchimera/Developer/SwiftUICalendar/Tests/SwiftUICalendarTests/SwiftUICalendarTests.swift"
+      ],
+      "tempsPath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "SwiftUICalendar" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftUICalendar",
+      "-package-name",
+      "swiftuicalendar",
+      "-c",
+      "/Users/gchimera/Developer/SwiftUICalendar/Sources/SwiftUICalendar/CalendarView.swift",
+      "/Users/gchimera/Developer/SwiftUICalendar/Sources/SwiftUICalendar/SwiftUICalendar.swift",
+      "-I",
+      "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/include/SwiftUICalendar-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swiftuicalendar",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SwiftUICalendarPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftUICalendarPackageTests",
+      "-package-name",
+      "swiftuicalendar",
+      "-c",
+      "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/include/SwiftUICalendarPackageTests-Swift.h",
+      "-color-diagnostics",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swiftuicalendar",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SwiftUICalendarTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftUICalendarTests",
+      "-package-name",
+      "swiftuicalendar",
+      "-c",
+      "/Users/gchimera/Developer/SwiftUICalendar/Tests/SwiftUICalendarTests/SwiftUICalendarTests.swift",
+      "-I",
+      "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swiftuicalendar",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "SwiftUICalendar" : [
+
+    ],
+    "SwiftUICalendarPackageTests" : [
+      "SwiftUICalendarTests",
+      "SwiftUICalendar"
+    ],
+    "SwiftUICalendarTests" : [
+      "SwiftUICalendar"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/Sources/SwiftUICalendar/CalendarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/Sources/SwiftUICalendar/SwiftUICalendar.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/sources"
+    },
+    "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/sources"
+    },
+    "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/CalendarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/SwiftUICalendar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarTests.build/SwiftUICalendarTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gchimera/Developer/SwiftUICalendar/Tests/SwiftUICalendarTests/SwiftUICalendarTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarTests.build/sources"
+    },
+    "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

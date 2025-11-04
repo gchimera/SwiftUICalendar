@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/master.swiftdeps"
+  },
+  "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/runner.d",
+    "object": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendarPackageTests.build/runner.dia"
+  }
+}

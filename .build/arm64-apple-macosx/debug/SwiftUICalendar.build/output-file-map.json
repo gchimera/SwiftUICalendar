@@ -1,0 +1,19 @@
+{
+  "": {
+    "swift-dependencies": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/master.swiftdeps"
+  },
+  "/Users/gchimera/Developer/SwiftUICalendar/Sources/SwiftUICalendar/CalendarView.swift": {
+    "dependencies": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/CalendarView.d",
+    "object": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/CalendarView.swift.o",
+    "swiftmodule": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/CalendarView~partial.swiftmodule",
+    "swift-dependencies": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/CalendarView.swiftdeps",
+    "diagnostics": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/CalendarView.dia"
+  },
+  "/Users/gchimera/Developer/SwiftUICalendar/Sources/SwiftUICalendar/SwiftUICalendar.swift": {
+    "dependencies": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/SwiftUICalendar.d",
+    "object": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/SwiftUICalendar.swift.o",
+    "swiftmodule": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/SwiftUICalendar~partial.swiftmodule",
+    "swift-dependencies": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/SwiftUICalendar.swiftdeps",
+    "diagnostics": "/Users/gchimera/Developer/SwiftUICalendar/.build/arm64-apple-macosx/debug/SwiftUICalendar.build/SwiftUICalendar.dia"
+  }
+}
