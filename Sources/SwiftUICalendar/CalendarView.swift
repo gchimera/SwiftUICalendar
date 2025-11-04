@@ -8,21 +8,22 @@
 import Foundation
 import SwiftUI
 
+/// The current view mode of the calendar
+public enum ViewMode: String, CaseIterable {
+    case day, week, month, year
+}
+
+/// Weekday enumeration for calendar calculations
+public enum Weekday: Int, CaseIterable {
+    case sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday
+}
+
 /// A highly customizable and reusable SwiftUI calendar library supporting multiple views: day, week, month, and year.
 /// Designed for iOS developers to integrate an elegant and flexible calendar into their apps.
 /// Features Apple-inspired liquid glass effect where possible.
 @available(iOS 17.0, macOS 14.0, *)
 @MainActor
 public struct CalendarView {
-    /// The current view mode of the calendar
-    public enum ViewMode: String, CaseIterable {
-        case day, week, month, year
-    }
-
-    /// Weekday enumeration for calendar calculations
-    public enum Weekday: Int, CaseIterable {
-        case sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday
-    }
 
     /// Configuration for the calendar appearance and behavior
     public struct Configuration {
@@ -34,7 +35,7 @@ public struct CalendarView {
         public var disabledColor: Color = Color.gray.opacity(0.3)
         public var useLiquidGlassEffect: Bool = true
         public var showWeekNumbers: Bool = false
-        public var startOfWeek: Weekday = Weekday.monday
+        public var startOfWeek: Weekday = .monday
         public var locale: Locale = Locale.current
 
         public init() {}
@@ -441,10 +442,10 @@ extension Date {
     }
 
     var startOfWeek: Date {
-        startOfWeek(weekday: .monday)
+        startOfWeek(weekday: Weekday.monday)
     }
 
-    func startOfWeek(weekday: CalendarView.Weekday) -> Date {
+    func startOfWeek(weekday: Weekday) -> Date {
         let calendar = Foundation.Calendar(identifier: .gregorian)
         let components = calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)
         return calendar.date(from: components)!.adding(days: weekday.rawValue - 1)
@@ -483,7 +484,7 @@ extension Date {
 
 // MARK: - Weekday Extensions
 
-extension CalendarView.Weekday {
+extension Weekday {
     public var rawValue: Int {
         switch self {
         case .sunday: return 1
@@ -496,7 +497,7 @@ extension CalendarView.Weekday {
         }
     }
 
-    func advanced(by days: Int) -> CalendarView.Weekday {
+    func advanced(by days: Int) -> Weekday {
         let newRawValue = (rawValue - 1 + days) % 7 + 1
         switch newRawValue {
         case 1: return .sunday
