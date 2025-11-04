@@ -27,18 +27,40 @@ public struct CalendarView {
 
     /// Configuration for the calendar appearance and behavior
     public struct Configuration {
-        public var accentColor: Color = Color.blue
-        public var backgroundColor: Color = Color.white
-        public var textColor: Color = Color.black
-        public var todayColor: Color = Color.blue
-        public var selectedColor: Color = Color.blue.opacity(0.2)
-        public var disabledColor: Color = Color.gray.opacity(0.3)
-        public var useLiquidGlassEffect: Bool = true
-        public var showWeekNumbers: Bool = false
-        public var startOfWeek: Weekday = .monday
-        public var locale: Locale = Locale.current
+        public var accentColor: Color
+        public var backgroundColor: Color
+        public var textColor: Color
+        public var todayColor: Color
+        public var selectedColor: Color
+        public var disabledColor: Color
+        public var useLiquidGlassEffect: Bool
+        public var showWeekNumbers: Bool
+        public var startOfWeek: Weekday
+        public var locale: Locale
 
-        public init() {}
+        public init(
+            accentColor: Color = Color.blue,
+            backgroundColor: Color = Color.white,
+            textColor: Color = Color.black,
+            todayColor: Color = Color.blue,
+            selectedColor: Color = Color.blue.opacity(0.2),
+            disabledColor: Color = Color.gray.opacity(0.3),
+            useLiquidGlassEffect: Bool = true,
+            showWeekNumbers: Bool = false,
+            startOfWeek: Weekday = .monday,
+            locale: Locale = Locale.current
+        ) {
+            self.accentColor = accentColor
+            self.backgroundColor = backgroundColor
+            self.textColor = textColor
+            self.todayColor = todayColor
+            self.selectedColor = selectedColor
+            self.disabledColor = disabledColor
+            self.useLiquidGlassEffect = useLiquidGlassEffect
+            self.showWeekNumbers = showWeekNumbers
+            self.startOfWeek = startOfWeek
+            self.locale = locale
+        }
     }
 
     @State private var currentDate: Date = Date()
