@@ -12,6 +12,7 @@ import SwiftUI
 /// Designed for iOS developers to integrate an elegant and flexible calendar into their apps.
 /// Features Apple-inspired liquid glass effect where possible.
 @available(iOS 17.0, macOS 14.0, *)
+@MainActor
 public struct CalendarView {
     /// The current view mode of the calendar
     public enum ViewMode: String, CaseIterable {
