@@ -5,6 +5,7 @@
 //  Created by Roo on 2025-11-04.
 //
 
+import Foundation
 import SwiftUI
 
 /// A highly customizable and reusable SwiftUI calendar library supporting multiple views: day, week, month, and year.
