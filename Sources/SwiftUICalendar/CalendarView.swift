@@ -215,16 +215,50 @@ extension CalendarView: View {
 }
 
 /// Liquid glass effect background view
+/// Based on Apple's Liquid Glass design principles
 private struct LiquidGlassBackground: View {
     var body: some View {
         ZStack {
-            Color.white.opacity(0.1)
+            // Primary material layer
+            Color.clear
+                .background(.ultraThinMaterial)
+
+            // Subtle highlight layer
+            Color.white.opacity(0.08)
+                .blur(radius: 24)
+                .blendMode(.plusLighter)
+
+            // Inner glow effect
             Color.white.opacity(0.05)
-                .blur(radius: 20)
+                .blur(radius: 12)
+                .blendMode(.plusLighter)
+
+            // Vignette effect for depth
+            RadialGradient(
+                gradient: Gradient(colors: [
+                    Color.black.opacity(0.0),
+                    Color.black.opacity(0.02),
+                    Color.black.opacity(0.08)
+                ]),
+                center: .center,
+                startRadius: 0,
+                endRadius: 300
+            )
+            .blendMode(.multiply)
         }
-        .background(.ultraThinMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 16))
-        .shadow(radius: 10)
+        .shadow(
+            color: Color.black.opacity(0.15),
+            radius: 20,
+            x: 0,
+            y: 8
+        )
+        .shadow(
+            color: Color.black.opacity(0.08),
+            radius: 8,
+            x: 0,
+            y: 4
+        )
     }
 }
 
