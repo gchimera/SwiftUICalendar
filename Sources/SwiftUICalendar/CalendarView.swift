@@ -26,16 +26,16 @@ public struct CalendarView {
 
     /// Configuration for the calendar appearance and behavior
     public struct Configuration {
-        public var accentColor: Color = .blue
-        public var backgroundColor: Color = .white
-        public var textColor: Color = .black
-        public var todayColor: Color = .blue
-        public var selectedColor: Color = .blue.opacity(0.2)
-        public var disabledColor: Color = .gray.opacity(0.3)
+        public var accentColor: Color = Color.blue
+        public var backgroundColor: Color = Color.white
+        public var textColor: Color = Color.black
+        public var todayColor: Color = Color.blue
+        public var selectedColor: Color = Color.blue.opacity(0.2)
+        public var disabledColor: Color = Color.gray.opacity(0.3)
         public var useLiquidGlassEffect: Bool = true
         public var showWeekNumbers: Bool = false
-        public var startOfWeek: Weekday = .monday
-        public var locale: Locale = .current
+        public var startOfWeek: Weekday = Weekday.monday
+        public var locale: Locale = Locale.current
 
         public init() {}
     }
